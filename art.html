@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Group Project</title>
+    <link rel="stylesheet" href="../CSS/others.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">
+        <img
+          src="./Images/flow_trans.png"
+          width="75"
+          height="45"
+          alt="Flow logo"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="navbar-brand" href="index.html">
+              <img
+                src="https://img.icons8.com/pastel-glyph/64/000000/home.png"
+                width="30"
+                height="30"
+                alt="home"
+              />
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="navbar-brand" href="music_player.html">
+              <img
+                src="https://img.icons8.com/pastel-glyph/256/000000/music.png"
+                width="30"
+                height="30"
+                alt="music"
+              />
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="navbar-brand" href="art.html">
+              <img
+                src="https://img.icons8.com/material-rounded/96/000000/art-therapist.png"
+                width="30"
+                height="30"
+                alt="art"
+              />
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="navbar-brand" href="contact.html">
+              <img
+                src="https://img.icons8.com/ios-filled/100/000000/add-contact-to-company.png"
+                width="30"
+                height="30"
+                alt="contact"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- <img class="flow_logo"
+    src="./Images/flow_trans.png"
+    alt="Flow logo" /> -->
+    <header class="jumbotron jumbotron-fluid bg-light text-center">
+      <h1>Your Art</h1>
+    </header>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <div class="container">
+
+      <!--Main Content-->
+
+      <p> In this page, we provide some art techniques for you to try out and find what works for you. 
+         You will receive a pack of art activities flashcards included when ordering your art supplies. 
+      </p>
+      <br>
+
+      <h5> Postcard Activity </h5>
+      <p> A good self-discovery exercise that helps answer the question, “what would I say to someone if I didn’t have to do it face-to-face?”
+      </p>
+      <img src="./Images/postcard.jpg" width="1050" height="800" alt="Computer Hope">
+      <br>
+      <br>
+      <br>
+
+      <h5> Lighthouse Activity </h5>
+      <p> For these who feel lost, overwhelmed, or isolated, expressing those feeling and visualise hope can be therapeutic and a great way to identify needs, feel hope for the future.
+      </p>
+      <img src="./Images/lighthouse.jpg" width="1050" height="800" alt="Lighthouse">
+      <br>
+      <br>
+
+      <h5> Anxiety </h5>
+      <img src="./Images/anxiety.jpg" width="1050" height="800" alt="Anxiety">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+<h5> Send us your artworks! </h5>
+<br>
+<br>
+      
+      <!--Carousel Wrapper-->
+      <div
+        id="carousel-with-lb"
+        class="carousel slide carousel-multi-item"
+        data-ride="carousel"
+      >
+        <!--Controls-->
+        <div class="controls-top">
+          <a
+            class="btn-floating btn-secondary"
+            href="#carousel-with-lb"
+            data-slide="prev"
+            ><i class="fas fa-chevron-left"></i
+          ></a>
+          <a
+            class="btn-floating btn-secondary"
+            href="#carousel-with-lb"
+            data-slide="next"
+            ><i class="fas fa-chevron-right"></i
+          ></a>
+        </div>
+        <!--/.Controls-->
+
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carousel-with-lb"
+            data-slide-to="0"
+            class="active secondary-color"
+          ></li>
+          <li
+            data-target="#carousel-with-lb"
+            data-slide-to="1"
+            class="secondary-color"
+          ></li>
+          <li
+            data-target="#carousel-with-lb"
+            data-slide-to="2"
+            class="secondary-color"
+          ></li>
+        </ol>
+        <!--/.Indicators-->
+
+        <!--Slides and lightbox-->
+
+        <div class="carousel-inner mdb-lightbox" role="listbox">
+          <div id="mdb-lightbox-ui"></div>
+          <!--First slide-->
+          <div class="carousel-item active text-center">
+            <figure class="col-md-4 d-md-inline-block">
+              <a
+                href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(2).jpg"
+                data-size="1600x1067"
+              >
+                <img
+                  src="https://i.ibb.co/gg12hQ3/dragon.jpg"
+                  class="img-fluid"
+                />
+              </a>
+            </figure>
+
+            <figure class="col-md-4 d-md-inline-block">
+              <a
+                href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(4).jpg"
+                data-size="1600x1067"
+              >
+                <img
+                  src="https://i.ibb.co/RpxhCt2/crying-flesh.jpg"
+                  class="img-fluid"
+                />
+              </a>
+            </figure>
+
+            <figure class="col-md-4 d-md-inline-block">
+              <a
+                href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(6).jpg"
+                data-size="1600x1067"
+              >
+                <img
+                  src="https://i.ibb.co/hmpdd8S/darkness.jpg"
+                  class="img-fluid"
+                />
+              </a>
+            </figure>
+
+            <figure class="col-md-4 d-md-inline-block">
+              <a
+                href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(10).jpg"
+                data-size="1600x1067"
+              >
+                <img
+                  src="https://i.ibb.co/PZD7S9p/eyes.jpg"
+                  class="img-fluid"
+                />
+              </a>
+            </figure>
+          </div>
+          <!--/.First slide-->
+
+          <!--Second slide-->
+          <div class="carousel-item text-center">
+            <figure class="col-md-4 d-md-inline-block">
+              <a
+                href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(29).jpg"
+                data-size="1600x1067"
+              >
+                <img
+                  src="https://i.ibb.co/nr8tz0y/flowers.jpg"
+                  class="img-fluid"
+                />
+              </a>
+            </figure>
+
+            <figure class="col-md-4 d-md-inline-block">
+              <a
+                href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(31).jpg"
+                data-size="1600x1067"
+              >
+                <img
+                  src="https://i.ibb.co/JpgsgCB/lost.jpg"
+                  class="img-fluid"
+                />
+              </a>
+            </figure>
+            <figure class="col-md-4 d-md-inline-block">
+              <a
+                href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(32).jpg"
+                data-size="1600x1067"
+              >
+                <img
+                  src="https://i.ibb.co/485mWqW/scream.jpg"
+                  class="img-fluid"
+                />
+              </a>
+            </figure>
+            <figure class="col-md-4 d-md-inline-block">
+              <a
+                href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(33).jpg"
+                data-size="1600x1067"
+              >
+                <img
+                  src="https://i.ibb.co/GRbmTVt/side-profile.jpg"
+                  class="img-fluid"
+                />
+              </a>
+            </figure>
+          </div>
+          <!--/.Second slide-->
+
+          <!--Third slide-->
+          <div class="carousel-item text-center">
+            <figure class="col-md-4 d-md-inline-block">
+              <a
+                href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(44).jpg"
+                data-size="1600x1067"
+              >
+                <img
+                  src="https://i.ibb.co/mRZQMRh/the-self.jpg"
+                  class="img-fluid"
+                />
+              </a>
+            </figure>
+
+            <figure class="col-md-4 d-md-inline-block">
+              <a
+                href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(45).jpg"
+                data-size="1600x1067"
+              >
+                <img
+                  src="https://i.ibb.co/FzLvMRn/within-nature.jpg"
+                  class="img-fluid"
+                />
+              </a>
+            </figure>
+
+            <figure class="col-md-4 d-md-inline-block">
+              <a
+                href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(66).jpg"
+                data-size="1600x1067"
+              >
+                <img
+                  src="https://i.ibb.co/9qtXmhm/yellow-coat.jpg"
+                  class="img-fluid"
+                />
+              </a>
+            </figure>
+
+            <figure class="col-md-4 d-md-inline-block">
+              <a
+                href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(53).jpg"
+                data-size="1600x1067"
+              >
+                <img
+                  src="https://i.ibb.co/vmm6gNL/timer.jpg"
+                  class="img-fluid"
+                />
+              </a>
+            </figure>
+          </div>
+          <!--/.Third slide-->
+        </div>
+        <!--/.Slides-->
+      </div>
+      <!--/.Carousel Wrapper-->
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="page-footer font-small blue">
+      <div class="p-3 mb-2 bg-light text-dark">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+          © 2020 Copyright: Flow <br />
+          Created by: <a href="linkedin.com/in/esaidy"> Engila Saidy</a> and Bo
+          Paowana
+        </div>
+        <!-- Copyright -->
+      </div>
+    </footer>
+    <!-- Footer -->
+  </body>
+</html>

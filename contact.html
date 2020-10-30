@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+    <title>Group Project</title>
+    <link rel="stylesheet" href="../CSS/others.css">
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="index.html">
+            <img src="./Images/flow_trans.png"
+            width="75"
+            height="45"
+            alt="Flow logo" />
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                  <a class="navbar-brand" href="index.html">
+                      <img src="https://img.icons8.com/pastel-glyph/64/000000/home.png" width="30" height="30" alt="home">
+                    </a>
+              </li>
+              <li class="nav-item">
+                  <a class="navbar-brand" href="music_player.html">
+                      <img src="https://img.icons8.com/pastel-glyph/256/000000/music.png" width="30" height="30" alt="music">
+                    </a>
+              </li>
+              <li class="nav-item">
+                  <a class="navbar-brand" href="art.html">
+                      <img src="https://img.icons8.com/material-rounded/96/000000/art-therapist.png" width="30" height="30" alt="home">
+                    </a>
+              </li>
+              <li class="nav-item active">
+                  <a class="navbar-brand" href="contact.html">
+                      <img src="https://img.icons8.com/ios-filled/100/000000/add-contact-to-company.png" width="30" height="30" alt="home">
+                    </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- <img class="flow_logo"
+        src="./Images/flow_trans.png"
+        alt="Flow logo" /> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+          <header class="jumbotron jumbotron-fluid bg-light text-center">
+            <h1>Contact Us</h1>
+          </header>
+    <div class="container">
+          <p> Leave us a message on how we could improve or what we could do to help you out! We love to get involved and aim to make art accessible and enjoyable for all so please do not hesitate to contact us. We look forward to hearing from you and we vow to take any and all feedback seriously with a focus on improvement. </p>
+      
+          <main>
+            <div class="row">
+              <div class="col">
+                <form id="contact-form">
+                  <div class="form-group row">
+                    <label for="f_name" class="col-sm-2 col-form-label">Name</label>
+                      <input name="f_name" placeholder="Name..." class="form-control" />
+                  </div>
+      
+                  <div class="form-group row">
+                    <label for="f_email" class="col-sm-2 col-form-label">Email</label>
+                      <input name="f_email" placeholder="Enter your email here" class="form-control" />
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="f_topic" class="col-sm-2 col-form-label">Topic</label>
+                      <input name="f_topic" placeholder="Topic ..." class="form-control" />
+                  </div>
+      
+                  <div class="form-group row">
+                    <label for="f_message" class="col-sm-2 col-form-label">Message</label>
+                      <textarea name="f_message" placeholder="Leave us a message!" class="form-control" rows="4"></textarea>
+                  </div>
+                  
+                    <div class="form-group form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Select to Request Response</label>
+                    </div>
+                  </div>
+            </div>
+                  
+                  <input id="contact-form-submit" type="submit" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal" value="Submit"/>
+                </form>
+      
+      
+              </div>
+            </div>
+          </main>
+        </div>
+      
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Thank you!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Message you sent:</p>
+      
+                <div id="nameDiv">
+                  <p><b>Name:</b></p>
+                </div>
+
+                <div id="emailDiv">
+                  <p><b>Email:</b></p>
+                </div>
+      
+                <div id="topicDiv">
+                  <p><b>Topic:</b></p>
+                </div>
+      
+                <div id="messageDiv">
+                  <p><b>Message:</b></p>
+                </div>
+      
+                <p>Thank you for sending your message, we will respond soon if you have requetsed a response!</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <script src="../JS/contact.js"></script>
+        <!-- Footer -->
+<footer class="page-footer font-small blue">
+  <div class="p-3 mb-2 bg-light text-dark">
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright: Flow <br> Created by:
+    <a href="linkedin.com/in/esaidy"> Engila Saidy</a> and Bo Paowana
+  </div>
+  <!-- Copyright -->
+</div>
+</footer>
+<!-- Footer -->
+  </body>
+</html>

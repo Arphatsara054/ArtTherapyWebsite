@@ -1,0 +1,17 @@
+h1 {
+  color: lightseagreen;
+}
+body{
+  font-family: 'Dosis', sans-serif;
+}
+.flow_logo{
+  width: 20%;
+  height: auto;
+/* align-content: left; */
+ }
+.container{
+  margin-bottom: 20px;
+}
+a{
+  color: lightseagreen;
+  }

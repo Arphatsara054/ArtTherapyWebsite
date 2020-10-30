@@ -1,0 +1,47 @@
+h1 {
+  color: lightseagreen;
+}
+body{
+  font-family: 'Dosis', sans-serif;
+}
+body{
+  background-image: url("https://image.freepik.com/free-vector/hand-drawn-abstract-organic-shapes-background_23-2148417582.jpg");
+}
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.9;
+align-content: center;
+align-items: center;
+text-align: center;
+padding: 20px;
+}
+
+div.transbox p {
+  /* margin: 5%; */
+  font-weight: bold;
+  color: #000000;
+}
+h5, h4, h3{
+color: maroon;
+}
+.faces{
+  width: 25rem;
+  height: auto;
+}
+
+.carousel_slide{
+  margin: 12px;
+}
+
+.flow_logo{
+width: 20%;
+height: auto;
+}
+.container{
+  margin-bottom: 20px;
+}
+a{
+color: lightseagreen;
+}

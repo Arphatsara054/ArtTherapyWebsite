@@ -1,0 +1,208 @@
+
+  </head>
+  <body>
+
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <link
+          rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap"
+          rel="stylesheet"
+        />
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a062562745.js" crossorigin="anonymous"></script>
+        <title>Group Project</title>
+        <link rel=stylesheet href="../CSS/music.css" media=all> 
+      </head>
+      <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="index.html">
+            <img src="./Images/flow_trans.png"
+            width="75"
+            height="45"
+            alt="Flow logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="navbar-brand" href="index.html">
+                  <img
+                    src="https://img.icons8.com/pastel-glyph/64/000000/home.png"
+                    width="30"
+                    height="30"
+                    alt="home"
+                  />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="navbar-brand" href="music_player.html">
+                  <img
+                    src="https://img.icons8.com/pastel-glyph/256/000000/music.png"
+                    width="30"
+                    height="30"
+                    alt="music"
+                  />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="navbar-brand" href="art.html">
+                  <img
+                    src="https://img.icons8.com/material-rounded/96/000000/art-therapist.png"
+                    width="30"
+                    height="30"
+                    alt="home"
+                  />
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="navbar-brand" href="contact.html">
+                  <img
+                    src="https://img.icons8.com/ios-filled/100/000000/add-contact-to-company.png"
+                    width="30"
+                    height="30"
+                    alt="home"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- <img class="flow_logo"
+        src="./Images/flow_trans.png"
+        alt="Flow logo" /> -->
+        <header class="jumbotron jumbotron-fluid bg-light text-center">
+        <h1>Your Music</h1>
+        </header>
+        <div class="container">
+<p>
+This page is here for you to have everything at your fingertips to start on your art therapy and fully be immersed in it. We have curated some tracks indicative of different moods but we do not want to sway how you think of them so have not labelled them as such. Rather take your time listening to them and use the length of the tracks to decide how long your session will be for today. As much as we have tried to cover everything here it may just not be what you are looking for today - and that's okay! Go to <a href="https://freemusicarchive.org/search"> FMA </a> to look through more tracks. But, remember the most important part is to start drawing so just try to let go. You got this!
+</p>
+ <!-- the onTimeUpdate function in javascript means that the change intime will be tracked for the current song -->
+<audio id="myAudio" ontimeupdate="onTimeUpdate()">
+  <!-- <source src="audio.ogg" type="audio/ogg"> -->
+  <source id="source-audio" src="" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<!-- the container for the music player -->
+<div class="player-ctn">
+<!-- the container for the info regarding the song info -->
+  <div class="infos-ctn">
+    <div class="timer">00:00</div>
+    <div class="title"></div>
+    <div class="duration">00:00</div>
+  </div>
+  <div id="myProgress">
+    <div id="myBar"></div>
+  </div>
+<!-- the different buttons -->
+  <div class="btn-ctn">
+    <!-- previous button which on click runs the previous function is JS -->
+     <div class="btn-action first-btn" onclick="previous()">
+        <div id="btn-faws-back">
+          <i class='fas fa-step-backward'></i>
+        </div>
+     </div>
+    <!-- rewind button which on click runs the rewind function is JS -->
+     <div class="btn-action" onclick="rewind()">
+        <div id="btn-faws-rewind">
+          <i class='fas fa-backward'></i>
+        </div>
+     </div>
+     <!-- pause/play button which on click runs the toggleAudio function is JS -->
+     <div class="btn-action" onclick="toggleAudio()">
+        <div id="btn-faws-play-pause">
+          <i class='fas fa-play' id="icon-play"></i>
+          <i class='fas fa-pause' id="icon-pause" style="display: none"></i>
+        </div>
+     </div>
+     <!-- forward button which on click runs the forawrd function is JS -->
+     <div class="btn-play" onclick="forward()">
+        <div id="btn-faws-forward">
+          <i class='fas fa-forward'></i>
+        </div>
+     </div>
+     <!-- next button which on click runs the next function is JS -->
+     <div class="btn-action" onclick="next()">
+        <div id="btn-faws-next">
+          <i class='fas fa-step-forward'></i>
+        </div>
+     </div>
+     <!-- volume up/down button which on click runs the toggleMute function is JS -->
+     <div class="btn-mute" id="toggleMute" onclick="toggleMute()">
+        <div id="btn-faws-volume">
+          <i id="icon-vol-up" class='fas fa-volume-up'></i>
+          <i id="icon-vol-mute" class='fas fa-volume-mute' style="display: none"></i>
+        </div>
+     </div>
+  </div>
+  <div class="playlist-ctn"></div>
+</div>
+<!-- form in order to add songs temporarily to the music player -->
+<div id="song-addition-form">
+<p> Use the form below to add any songs which you would like to, to the above music player. To keep everything in one pace and minimise your distractions!</p>
+  <div class="row">
+    <div class="col">
+      <form id="song-form">
+        <div class="form-group row">
+          <label for="f_songname" class="col-sm-2 col-form-label">Song Name</label>
+            <input name="f_songname" placeholder="Name of the Song" class="form-control" />
+        </div>
+
+        <div class="form-group row">
+          <label for="f_length" class="col-sm-2 col-form-label">Song Length</label>
+            <input name="f_length" placeholder="The Length of the Song" class="form-control" />
+        </div>
+        <!-- need to make sure that the link is just an .mp3 file -->
+        <div class="form-group row">
+          <label for="f_link" class="col-sm-2 col-form-label">Song Link</label>
+            <input name="f_link" placeholder="The Link for the Song" class="form-control" />
+        </div>
+        <input id="contact-form-submit" type="submit" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal" value="Submit"/>
+      </div>
+    </form>
+  </div>
+</div>
+        </div>
+
+<script src="../JS/music.js"></script>
+  <!-- Footer -->
+
+  <footer class="page-footer font-small blue">
+    <div class="p-3 mb-2 bg-light text-dark">
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright: Flow <br> Created by:
+      <a href="linkedin.com/in/esaidy"> Engila Saidy</a> and Bo Paowana <br>
+      Music From: 
+      <a href="https://freemusicarchive.org/search"> FMA </a>
+    </div>
+    <!-- Copyright -->
+  </div>
+  </footer>
+  <!-- Footer -->
+  </body>
+</html>
